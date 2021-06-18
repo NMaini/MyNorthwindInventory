@@ -2,4 +2,5 @@
 #bin folder
 /nitin.aspnetcore.northwind/bin
 /nitin.aspnetcore.northwind/obj
+.vs/	
 
