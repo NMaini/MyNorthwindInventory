@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo restoring packages
+      - dotnet restore "nitin.aspnetcore.northwind/nitin.aspnetcore.northwind.csproj"
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet build "nitin.aspnetcore.northwind/nitin.aspnetcore.northwind.csproj" -c Release -o /app/build
+artifacts:
+  files:
+    - app/build/**/*
