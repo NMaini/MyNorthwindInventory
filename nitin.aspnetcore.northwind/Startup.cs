@@ -24,6 +24,10 @@ namespace nitin.aspnetcore.northwind
         /// <param name="services">refers to the Dependency Injection Container</param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthorization();
+
+            services.AddControllers();
+
             services.AddDbContext<NorthwindContext>();
         }
 
