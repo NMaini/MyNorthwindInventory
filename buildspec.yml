@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build "nitin.aspnetcore.northwind/nitin.aspnetcore.northwind.csproj" -c Release -o /app/build
+      - dotnet build "nitin.aspnetcore.northwind/nitin.aspnetcore.northwind.csproj" -c Release -o ./app/build
 artifacts:
   files:
-    - app/build/**/*
+    - ./app/build/*
