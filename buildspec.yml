@@ -4,6 +4,10 @@ phases:
     commands:
       - echo checking docker version
       - docker --version
+      - echo checking daemon status
+      - service docker status 
+      - echo starting the service 
+      - service docker start
   build:
     commands:
       - echo Started building docker image `date`
